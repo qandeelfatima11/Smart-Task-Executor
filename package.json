@@ -7,16 +7,29 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^13.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
+    "react-router-dom": "^7.9.4",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "concurrently": "^9.2.1",
+    "web-vitals": "^2.1.4",
+    "zustand": "^5.0.8"
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:server": "node server/server.js",
+    "dev": "concurrently \"npm run start\" \"npm run start:server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17"
   },
   "eslintConfig": {
     "extends": [
